@@ -33,9 +33,7 @@ The `~OE` pins of both SRAMs are tied to GND. The chip select logic guarantees t
 
 ## Schematic
 
-<img width="4961" height="3508" alt="64KB Dual-SRAM 4-Bit Memory Controller" src="https://github.com/user-attachments/assets/0a630646-5ade-4a86-b956-91b0a51d4e1a" />
-
-*(Note: The schematic shows the base 32 KB configuration. The second SRAM is added in parallel as described in the Memory Expansion section.)*
+<img width="1132" height="799" alt="image" src="https://github.com/user-attachments/assets/e87dd026-751e-4388-9d26-266c17a1e253" />
 
 ## Components Used
 
