@@ -7,7 +7,7 @@
 	(title_block
 		(title "64KB Dual-SRAM 4-Bit Memory Controller")
 		(date "2026-11-14")
-		(rev "2.0")
+		(rev "3.0")
 		(company "Neowizen")
 		(comment 2 "access and read-modify-write operations.")
 		(comment 3 "A 64KB Dual-SRAM 4-Bit Memory Controller, featuring nibble-level read/write")
@@ -4674,6 +4674,16 @@
 		)
 		(uuid "66f969a2-8003-4a12-81b7-36072148ae1d")
 	)
+	(text "Full Byte  <--"
+		(exclude_from_sim no)
+		(at 480.568 60.452 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bf834da6-9344-41b3-9b1d-c7638fbf81d5")
+	)
 	(text "+ -"
 		(exclude_from_sim no)
 		(at 284.48 60.706 0)
@@ -4781,6 +4791,12 @@
 		(uuid "65db97e9-2d7c-4574-bfb9-3940904c3264")
 	)
 	(junction
+		(at 379.73 335.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bcd10b3-c347-453a-8fbe-153cc3d2f69b")
+	)
+	(junction
 		(at 220.98 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4793,6 +4809,12 @@
 		(uuid "6e84dab9-7ed7-47b1-84fd-3638df853ac2")
 	)
 	(junction
+		(at 382.27 337.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "702093f3-a135-4051-862a-c452128cc3ff")
+	)
+	(junction
 		(at 374.65 233.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4803,6 +4825,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73a31abd-79af-4207-9d23-ab1097ca2298")
+	)
+	(junction
+		(at 372.11 327.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7866fba6-2781-49ee-b192-7039bf0e52c2")
 	)
 	(junction
 		(at 203.2 190.5)
@@ -4889,6 +4917,12 @@
 		(uuid "a33200ed-d1c9-4175-b5d1-d02a7096f79e")
 	)
 	(junction
+		(at 374.65 330.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af75d375-437f-407e-9ec9-96b92d59ada2")
+	)
+	(junction
 		(at 195.58 313.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4937,6 +4971,12 @@
 		(uuid "cab70e97-dd28-4c82-b959-d1db0ae6808b")
 	)
 	(junction
+		(at 369.57 325.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd1eaec7-091e-47c9-bd00-29d07459fab4")
+	)
+	(junction
 		(at 245.11 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4961,6 +5001,12 @@
 		(uuid "dccac208-f901-4b3f-9108-3b9065b6890d")
 	)
 	(junction
+		(at 364.49 320.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dde43de3-0c3e-432e-87a3-ac597ad3080f")
+	)
+	(junction
 		(at 232.41 284.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4977,6 +5023,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebc8fa8c-7967-4291-82ef-f8170cbb48c2")
+	)
+	(junction
+		(at 377.19 332.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed965517-d884-4c1d-9185-92b03172627f")
 	)
 	(junction
 		(at 308.61 236.22)
@@ -5003,6 +5055,12 @@
 		(uuid "f77c94be-d0f5-49fc-9fa5-66ba61f27fa3")
 	)
 	(junction
+		(at 367.03 322.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f98494f5-bf14-490f-acd7-7d9c563df6ed")
+	)
+	(junction
 		(at 254 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5023,6 +5081,16 @@
 			(type default)
 		)
 		(uuid "00315184-ab1d-4b80-b835-8ed2715b6a46")
+	)
+	(wire
+		(pts
+			(xy 377.19 332.74) (xy 485.14 332.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "004bbb7d-c4cb-49e0-b97a-a76c015ae39a")
 	)
 	(wire
 		(pts
@@ -5083,6 +5151,16 @@
 			(type default)
 		)
 		(uuid "0489871b-5ab9-4b78-a7b6-353432cf89bd")
+	)
+	(wire
+		(pts
+			(xy 472.44 322.58) (xy 472.44 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0694d196-c5f3-4583-85bc-13814366827f")
 	)
 	(wire
 		(pts
@@ -5236,6 +5314,16 @@
 	)
 	(wire
 		(pts
+			(xy 490.22 337.82) (xy 490.22 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6eab0b-70cb-4f1a-94b5-5b9f1de21916")
+	)
+	(wire
+		(pts
 			(xy 198.12 193.04) (xy 205.74 193.04)
 		)
 		(stroke
@@ -5296,6 +5384,16 @@
 	)
 	(wire
 		(pts
+			(xy 474.98 325.12) (xy 369.57 325.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1276a9e7-ab7f-4e97-8b70-496afd05823b")
+	)
+	(wire
+		(pts
 			(xy 198.12 134.62) (xy 210.82 134.62)
 		)
 		(stroke
@@ -5333,6 +5431,16 @@
 			(type default)
 		)
 		(uuid "13268b96-c683-4772-9931-369c4081a9ac")
+	)
+	(wire
+		(pts
+			(xy 485.14 332.74) (xy 485.14 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13cbd47e-e351-46f9-8f1f-27a9f41bf9aa")
 	)
 	(wire
 		(pts
@@ -5416,6 +5524,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 322.58) (xy 472.44 322.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a8156ac-ca34-40a6-b4ae-7be1b247b8c1")
+	)
+	(wire
+		(pts
 			(xy 351.79 165.1) (xy 393.7 165.1)
 		)
 		(stroke
@@ -5453,6 +5571,16 @@
 			(type default)
 		)
 		(uuid "20700034-f541-4d26-9c89-f2b31bb5a022")
+	)
+	(wire
+		(pts
+			(xy 487.68 335.28) (xy 379.73 335.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20f761c4-e06e-4252-b2f5-cb90ebb6e8ab")
 	)
 	(wire
 		(pts
@@ -5563,6 +5691,16 @@
 			(type default)
 		)
 		(uuid "2fa4de69-4041-41ff-a99b-1df5e68a0f7b")
+	)
+	(wire
+		(pts
+			(xy 477.52 327.66) (xy 477.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "306845fc-a7cd-4d7c-a224-16baebef8b50")
 	)
 	(wire
 		(pts
@@ -6116,6 +6254,16 @@
 	)
 	(wire
 		(pts
+			(xy 469.9 320.04) (xy 364.49 320.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e5547db-a13b-4caa-900b-249f163686d8")
+	)
+	(wire
+		(pts
 			(xy 356.87 190.5) (xy 347.98 190.5)
 		)
 		(stroke
@@ -6463,6 +6611,16 @@
 			(type default)
 		)
 		(uuid "7c5941ea-3e42-46a2-98aa-0885dd58678a")
+	)
+	(wire
+		(pts
+			(xy 372.11 327.66) (xy 477.52 327.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c902bb5-f16d-443f-963e-655036d3480f")
 	)
 	(wire
 		(pts
@@ -6986,6 +7144,16 @@
 	)
 	(wire
 		(pts
+			(xy 382.27 337.82) (xy 490.22 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0680d77-58dc-4b6c-a011-7fc5ba9610aa")
+	)
+	(wire
+		(pts
 			(xy 284.48 256.54) (xy 298.45 256.54)
 		)
 		(stroke
@@ -7286,6 +7454,16 @@
 	)
 	(wire
 		(pts
+			(xy 469.9 68.58) (xy 469.9 320.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e11ef2-ab99-4920-b2c6-82d3b1fe0ae2")
+	)
+	(wire
+		(pts
 			(xy 203.2 242.57) (xy 198.12 242.57)
 		)
 		(stroke
@@ -7566,6 +7744,16 @@
 	)
 	(wire
 		(pts
+			(xy 482.6 68.58) (xy 482.6 330.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c48851b5-f900-415f-bf36-2d8a3b86150f")
+	)
+	(wire
+		(pts
 			(xy 149.86 260.35) (xy 149.86 302.26)
 		)
 		(stroke
@@ -7756,6 +7944,16 @@
 	)
 	(wire
 		(pts
+			(xy 487.68 68.58) (xy 487.68 335.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6e5f18a-39cb-4058-9258-87480b391c9e")
+	)
+	(wire
+		(pts
 			(xy 327.66 280.67) (xy 311.15 280.67)
 		)
 		(stroke
@@ -7893,6 +8091,16 @@
 			(type default)
 		)
 		(uuid "df605a63-178b-47df-b09f-646c7cfe1e09")
+	)
+	(wire
+		(pts
+			(xy 482.6 330.2) (xy 374.65 330.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0b6906f-9255-4981-95aa-fa70ec93cb5c")
 	)
 	(wire
 		(pts
@@ -8146,6 +8354,16 @@
 	)
 	(wire
 		(pts
+			(xy 474.98 68.58) (xy 474.98 325.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d6877d-b3c8-41ff-b11d-abd6af6e4b30")
+	)
+	(wire
+		(pts
 			(xy 149.86 302.26) (xy 250.19 302.26)
 		)
 		(stroke
@@ -8284,7 +8502,7 @@
 			(uuid "ee3d68df-4eb5-4854-91e3-f6b349ece2e1")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR034")
 					(unit 1)
@@ -8362,7 +8580,7 @@
 			(uuid "b6f7ddd2-f0ec-4508-a8c1-eebbe8c1b5f4")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR013")
 					(unit 1)
@@ -8450,7 +8668,7 @@
 			(uuid "d483b5d2-2158-4b5a-8911-6d9edcd21d7b")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J1")
 					(unit 1)
@@ -8528,7 +8746,7 @@
 			(uuid "e1c8fada-993d-4e46-a739-fa4fc785b912")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR010")
 					(unit 1)
@@ -8606,7 +8824,7 @@
 			(uuid "562148b6-e35f-4bc2-8865-d15927e9a3b0")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR054")
 					(unit 1)
@@ -8724,7 +8942,7 @@
 			(uuid "967c9cfa-efe6-469d-ab2e-c41719732ed6")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U7")
 					(unit 5)
@@ -8806,7 +9024,7 @@
 			(uuid "c384e1c8-e6e0-4f0b-a4e5-d8d9540de738")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C7")
 					(unit 1)
@@ -8884,7 +9102,7 @@
 			(uuid "c8243f80-0f5e-49e1-9246-e5682e70961f")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR044")
 					(unit 1)
@@ -8962,7 +9180,7 @@
 			(uuid "d42d8689-e670-4f75-9b3d-0bb918aa63aa")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR036")
 					(unit 1)
@@ -9040,7 +9258,7 @@
 			(uuid "70850c9d-1c4a-4e61-b0f8-9b80dc390624")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR03")
 					(unit 1)
@@ -9156,7 +9374,7 @@
 			(uuid "967c9cfa-efe6-469d-ab2e-c41719732ed7")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U7")
 					(unit 2)
@@ -9280,7 +9498,7 @@
 			(uuid "403724a0-0ebd-440a-a127-cf3b2f7618c5")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U5")
 					(unit 1)
@@ -9358,7 +9576,7 @@
 			(uuid "499b32e7-57ef-40c3-a1e6-d2e8bd6a7bc7")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR06")
 					(unit 1)
@@ -9437,7 +9655,7 @@
 			(uuid "cada7199-3a91-4871-bdbe-b195dacdbab0")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR032")
 					(unit 1)
@@ -9515,7 +9733,7 @@
 			(uuid "5150ef5d-ff8c-4d87-8f72-5b198e9e7831")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR05")
 					(unit 1)
@@ -9597,7 +9815,7 @@
 			(uuid "be488169-fa07-4e52-9d5e-64be6e2f1fe0")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C1")
 					(unit 1)
@@ -9675,7 +9893,7 @@
 			(uuid "6db4f4ce-1829-4ea0-aa8c-d3ccdfa71a20")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR043")
 					(unit 1)
@@ -9763,7 +9981,7 @@
 			(uuid "95b7af8f-a9df-4328-9c0d-eebcec6d8e58")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J7")
 					(unit 1)
@@ -9841,7 +10059,7 @@
 			(uuid "1e7572ac-4228-4a8b-834b-a081ff6fadc3")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR033")
 					(unit 1)
@@ -9920,7 +10138,7 @@
 			(uuid "e39019d4-ac60-4509-ac8f-a1afe23706f9")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR02")
 					(unit 1)
@@ -10002,7 +10220,7 @@
 			(uuid "a3207fd7-70ff-4e8e-8ea4-891a204bde22")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C8")
 					(unit 1)
@@ -10080,7 +10298,7 @@
 			(uuid "98fcfe4a-d108-4101-b1a3-1a00ff70a6ac")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR050")
 					(unit 1)
@@ -10168,7 +10386,7 @@
 			(uuid "5975087e-77a6-4b98-a815-27c6b7b8cb27")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J5")
 					(unit 1)
@@ -10304,9 +10522,97 @@
 			(uuid "3a987a54-992e-4c18-8721-2761157f804b")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 485.14 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c20ed7b-e555-468f-98e2-a1952eb429d4")
+		(property "Reference" "J10"
+			(at 486.41 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 486.41 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 485.14 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 485.14 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 485.14 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "af4272c9-a69b-4929-bc60-db02e9f38fc7")
+		)
+		(pin "2"
+			(uuid "3ebc54ef-8261-4105-a923-3b79167bf7f6")
+		)
+		(pin "4"
+			(uuid "f731113f-f933-4aa1-9361-3018b866c908")
+		)
+		(pin "1"
+			(uuid "cb93a3bb-423d-4bc7-997e-f0f0bb6cb75a")
+		)
+		(instances
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
+				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -10428,7 +10734,7 @@
 			(uuid "13300a43-86e7-4043-a769-0a793d004392")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U4")
 					(unit 1)
@@ -10510,7 +10816,7 @@
 			(uuid "32a38099-7406-4347-85ee-b37bf6bdc6dc")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C4")
 					(unit 1)
@@ -10670,7 +10976,7 @@
 			(uuid "ed15e807-a692-48cd-ac8d-2322fee3ede0")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U8")
 					(unit 1)
@@ -10748,7 +11054,7 @@
 			(uuid "d27bfff2-89aa-419b-a7fe-f57c3af3d709")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR040")
 					(unit 1)
@@ -10830,7 +11136,7 @@
 			(uuid "6f39ef30-8964-4795-92b5-2c83551020f5")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C6")
 					(unit 1)
@@ -10909,7 +11215,7 @@
 			(uuid "e852f29e-edac-4fab-afef-13f7494f1e25")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR052")
 					(unit 1)
@@ -10987,7 +11293,7 @@
 			(uuid "2e760730-c265-48b5-9ad9-18c8ec298953")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR045")
 					(unit 1)
@@ -11075,7 +11381,7 @@
 			(uuid "c71881d8-4e17-4509-b584-2812bad75fdf")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J6")
 					(unit 1)
@@ -11154,7 +11460,7 @@
 			(uuid "f84652d0-7e04-4201-a937-85bca71b919e")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR011")
 					(unit 1)
@@ -11232,7 +11538,7 @@
 			(uuid "5da6d111-a3d0-4fc7-9b51-5cadd8af018b")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR041")
 					(unit 1)
@@ -11314,7 +11620,7 @@
 			(uuid "85de6a22-ce61-493c-9887-7503af33f29f")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C3")
 					(unit 1)
@@ -11393,7 +11699,7 @@
 			(uuid "e3ee899c-d0f9-4418-a4ef-e7c1a808cf64")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR016")
 					(unit 1)
@@ -11479,7 +11785,7 @@
 			(uuid "7f04ccb6-a85c-4fa6-a874-f84361e472ee")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J3")
 					(unit 1)
@@ -11558,7 +11864,7 @@
 			(uuid "c261eb70-1c30-40dd-a128-b3edaa63ff3b")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR012")
 					(unit 1)
@@ -11636,7 +11942,7 @@
 			(uuid "dc1772e2-9e6c-412c-b2fc-0e1f12ce6c46")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR08")
 					(unit 1)
@@ -11724,7 +12030,7 @@
 			(uuid "6d664795-20fd-4c0b-88b3-e867aa338e45")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J8")
 					(unit 1)
@@ -11803,7 +12109,7 @@
 			(uuid "6216f48a-a770-40f3-867d-35044dcf75e3")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#FLG02")
 					(unit 1)
@@ -11881,7 +12187,7 @@
 			(uuid "b9679f3f-cf6e-42c0-aad9-d7e67f828dc6")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR053")
 					(unit 1)
@@ -11959,7 +12265,7 @@
 			(uuid "1ecfdea9-a298-45eb-a128-631dbac6c7c9")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR048")
 					(unit 1)
@@ -12038,7 +12344,7 @@
 			(uuid "06089649-ace4-44ce-84e0-1cc267934241")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#FLG01")
 					(unit 1)
@@ -12174,7 +12480,7 @@
 			(uuid "6201b451-1c53-4c13-ba75-d32cd13ce6b9")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U2")
 					(unit 1)
@@ -12252,7 +12558,7 @@
 			(uuid "bfc9a5fa-32f2-47c2-bb12-ba00d7ed3d58")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR01")
 					(unit 1)
@@ -12331,7 +12637,7 @@
 			(uuid "9271d4d2-4721-46e7-b473-7de5ff5885e7")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR07")
 					(unit 1)
@@ -12413,9 +12719,97 @@
 			(uuid "d35a956d-4107-481c-841e-f0acbd0926a5")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 472.44 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6bdfade-5d9b-4e28-8fee-3ba46ff13b41")
+		(property "Reference" "J9"
+			(at 473.71 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 473.71 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 472.44 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 472.44 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 472.44 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "eca8c869-6b1c-4196-936b-114630b6a939")
+		)
+		(pin "2"
+			(uuid "33ccbca7-39fa-46e8-b95f-bf004371ab07")
+		)
+		(pin "1"
+			(uuid "a22f2fac-c4ce-4410-b580-b2ed9ab572fa")
+		)
+		(pin "4"
+			(uuid "ff432e51-543c-408d-b512-5fc2f9e3b8d9")
+		)
+		(instances
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
+				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -12491,7 +12885,7 @@
 			(uuid "63884835-8270-4ea1-b25c-b47081786430")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR017")
 					(unit 1)
@@ -12607,7 +13001,7 @@
 			(uuid "967c9cfa-efe6-469d-ab2e-c41719732ed8")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U7")
 					(unit 3)
@@ -12685,7 +13079,7 @@
 			(uuid "5eac5f85-0bd4-4658-8610-94c6ff7009e2")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR035")
 					(unit 1)
@@ -12763,7 +13157,7 @@
 			(uuid "c5666fc7-df11-4c73-9226-a98c84865262")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR042")
 					(unit 1)
@@ -12841,7 +13235,7 @@
 			(uuid "0ada4e99-c3e3-4a31-a6ba-2e527cba2e97")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR046")
 					(unit 1)
@@ -13001,7 +13395,7 @@
 			(uuid "2949ef5e-bcf5-45bc-8948-bfd630af500f")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U1")
 					(unit 1)
@@ -13079,7 +13473,7 @@
 			(uuid "cc1ce839-bddc-4dc4-bfbc-f864962527a8")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR037")
 					(unit 1)
@@ -13197,7 +13591,7 @@
 			(uuid "967c9cfa-efe6-469d-ab2e-c41719732ed9")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U7")
 					(unit 4)
@@ -13275,7 +13669,7 @@
 			(uuid "74a243d0-e7da-4f0d-9164-e388acec1aa8")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR049")
 					(unit 1)
@@ -13353,7 +13747,7 @@
 			(uuid "59621222-28b9-4c16-a3b0-f54eb40acdfd")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR038")
 					(unit 1)
@@ -13432,7 +13826,7 @@
 			(uuid "3b0c64a1-746a-4f5c-abad-e251420fb19f")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR04")
 					(unit 1)
@@ -13515,7 +13909,7 @@
 			(uuid "d1acac07-bd89-4171-82ad-779de1e906dc")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J2")
 					(unit 1)
@@ -13594,7 +13988,7 @@
 			(uuid "cb3a9219-4e71-4715-a661-08a3974506a6")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR015")
 					(unit 1)
@@ -13672,7 +14066,7 @@
 			(uuid "a7172f1f-938a-4066-a773-9e7bbe14ea61")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR018")
 					(unit 1)
@@ -13750,7 +14144,7 @@
 			(uuid "99bd85af-a150-476b-9684-0911eaec3cad")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR09")
 					(unit 1)
@@ -13874,7 +14268,7 @@
 			(uuid "4a29fa5c-821e-4434-b143-c0be2ed95ce2")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U3")
 					(unit 1)
@@ -13952,7 +14346,7 @@
 			(uuid "fa5a204c-b8c6-468e-bca2-01bb73d519ad")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR047")
 					(unit 1)
@@ -14030,7 +14424,7 @@
 			(uuid "9fc0593d-57d0-488c-bfe8-a19345d29326")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR051")
 					(unit 1)
@@ -14118,7 +14512,7 @@
 			(uuid "aecc4f61-dd4d-48c2-b81f-f0c50ff07d34")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "J4")
 					(unit 1)
@@ -14197,7 +14591,7 @@
 			(uuid "520794c8-094e-40a0-97c1-018e24d63a51")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR014")
 					(unit 1)
@@ -14313,7 +14707,7 @@
 			(uuid "967c9cfa-efe6-469d-ab2e-c41719732eda")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "U7")
 					(unit 1)
@@ -14395,7 +14789,7 @@
 			(uuid "231999e5-0232-4eb3-92d4-2927db4be0bc")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C9")
 					(unit 1)
@@ -14477,7 +14871,7 @@
 			(uuid "4b8b2cc8-9384-4651-903d-0631d118de96")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "C2")
 					(unit 1)
@@ -14555,7 +14949,7 @@
 			(uuid "8e140360-1196-43ab-bdec-629582445f97")
 		)
 		(instances
-			(project "32K×8 SRAM 4-Bit Memory Controller"
+			(project "64KB Dual-SRAM 4-Bit Memory Controller"
 				(path "/3ade8d1e-0ab4-4cb0-9f42-d73b3be2fa0d"
 					(reference "#PWR039")
 					(unit 1)

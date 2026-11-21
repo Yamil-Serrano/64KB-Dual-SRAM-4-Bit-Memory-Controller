@@ -63,7 +63,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "32K×8 SRAM 4-Bit Memory Controller.kicad_prl",
+    "filename": "64KB Dual-SRAM 4-Bit Memory Controller.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
