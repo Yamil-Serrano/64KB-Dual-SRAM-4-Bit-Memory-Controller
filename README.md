@@ -32,8 +32,11 @@ The base design uses a single 32 KB SRAM. To expand to 64 KB, a second SRAM is a
 The `~OE` pins of both SRAMs are tied to GND. The chip select logic guarantees that only one SRAM drives the data bus at a time, making the expansion completely plug-and-play with no changes to the control logic or CPU firmware.
 
 ## Schematic
-
 <img width="1132" height="799" alt="image" src="https://github.com/user-attachments/assets/e87dd026-751e-4388-9d26-266c17a1e253" />
+
+### PCB Design in Kicad
+<img width="1919" height="1030" alt="image" src="https://github.com/user-attachments/assets/bded0256-840b-413b-bebf-f1684157f93a" />
+
 
 ## Components Used
 
@@ -63,16 +66,6 @@ The `~OE` pins of both SRAMs are tied to GND. The chip select logic guarantees t
 | CLK | Input | System clock, controls phase timing |
 | SEL | Input | Nibble select (0 = low nibble, 1 = high nibble) |
 | ADDR | Input | Memory address (16 lines, A0-A15) |
-
-### Performance
-
-| Parameter | Value |
-|---|---|
-| Access Time (Read) | 88 ns typical, 98 ns worst case |
-| Write Cycle Time | 90 ns typical, 98 ns worst case |
-| Theoretical Maximum Frequency | 10-11 MHz |
-| Practical Conservative Target | 8-10 MHz |
-| Validated Frequency | 1 MHz (Arduino Mega test platform) |
 
 ## Control Logic
 
@@ -113,9 +106,39 @@ Read operations are straightforward and do not require the read-modify-write pro
 3. The multiplexer selects either the high or low nibble based on SEL
 4. The selected nibble appears on the CPU data bus
 
-## Verification
+## Timing Analysis and Maximum Frequency
 
-The base module (32 KB) was validated using a firmware written for an Arduino Mega, which exercised the module's read and write logic to confirm it was working correctly. The test fills the entire RAM with `1111` as the main test pattern, then fills it again with `0000` as a cleanup step.
+Although the module is designed for robust operation in a modular breadboard/PCB environment, the theoretical maximum operating frequency is bounded by the critical path of the Read-Modify-Write (RMW) cycle. Since the clock has a 50% duty cycle, the total period (T_CLK) is limited by the slowest of the two phases multiplied by two.
+
+### 1. Control Logic Delay (Common to both phases)
+The CLK signal propagates through three cascaded NAND gates inside the 74HC00 to generate the CTRL and DIR signals.
+*   Control time = 3 * 10ns = 30ns (Worst-case typical at 5V)
+
+### 2. Phase 1: Read Old Byte (Rising Edge)
+Data flows from the SRAM -> 74HC245 -> 74HC573. The SRAM must output valid data, it must pass through the transceiver, and the latch must capture it before the clock falls.
+*   Control time: 30ns
+*   SRAM access time (CY62256LL-70): 70ns
+*   74HC245 propagation delay: 12ns
+*   74HC573 setup time: 20ns
+*   **Total Phase 1:** 30 + 70 + 12 + 20 = **132ns**
+
+### 3. Phase 2: Write Reconstructed Byte (Falling Edge)
+Data flows from the 74HC573 -> 74HC257 -> 74HC245 -> SRAM. The latch must output the data, the multiplexers must merge it, the transceiver must drive it, and the SRAM must capture it before ~WE goes high.
+*   Control time: 30ns
+*   74HC573 propagation delay: 15ns
+*   74HC257 propagation delay: 12ns
+*   74HC245 propagation delay: 12ns
+*   SRAM setup time (Data valid before ~WE rises): 20ns
+*   **Total Phase 2:** 30 + 15 + 12 + 12 + 20 = **89ns**
+
+### 4. Theoretical Maximum Frequency
+The critical path is Phase 1 (132ns). Therefore, the minimum clock period is:
+Minimum Period (T_min) = 2 * 132ns = **264ns**
+
+Maximum Frequency (F_max) = 1 / 264ns = 0.003787 GHz = **3.787 MHz**
+
+> **Note:** Adding ~10-20ns for PCB parasitics and clock skew across modular jumpers brings the practical, stable maximum frequency to approximately **3.0 - 3.5 MHz**.**
+
 
 ## Educational Value
 
@@ -131,7 +154,7 @@ This project demonstrates several important concepts in digital design:
 
 ## Known Limitations
 
-- **Maximum Frequency:** Ripple-through propagation limits top speed to approximately 10 MHz
+- **Maximum Frequency:** Ripple-through propagation limits top speed to approximately 3.78 MHz
 - **No Wait States:** The module assumes the CPU can complete the operation in one cycle
 
 ## License
